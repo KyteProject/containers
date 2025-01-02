@@ -4,7 +4,7 @@ name: "Pull Request: Validate"
 
 on:
   pull_request:
-    branches: ["master"]
+    branches: ["main"]
     types: ["opened", "synchronize", "reopened"]
 
 concurrency:
@@ -13,15 +13,15 @@ concurrency:
 
 jobs:
   simple-checks:
-    uses: kyteproject/containers/.github/workflows/simple-checks.yaml@master
+    uses: kyteproject/containers/.github/workflows/simple-checks.yaml@main
 
   get-changed-images:
-    uses: kyteproject/containers/.github/workflows/get-changed-images.yaml@master
+    uses: kyteproject/containers/.github/workflows/get-changed-images.yaml@main
 
   build-images:
     needs: ["simple-checks", "get-changed-images"]
     if: ${{ needs.get-changed-images.outputs.addedOrModified == 'true' }}
-    uses: kyteproject/containers/.github/workflows/build-images.yaml@master
+    uses: kyteproject/containers/.github/workflows/build-images.yaml@main
     secrets: inherit
     with:
       appsToBuild: "${{ needs.get-changed-images.outputs.addedOrModifiedImages }}"

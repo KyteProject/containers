@@ -1,5 +1,5 @@
 ---
-# https://github.com/aelsabbahy/goss/blob/master/docs/manual.md#file
+# https://github.com/aelsabbahy/goss/blob/main/docs/manual.md#file
 file:
   /scripts/greeting.sh:
     exists: true
@@ -8,13 +8,13 @@ file:
   /usr/local/bin/envsubst:
     exists: true
 
-# https://github.com/aelsabbahy/goss/blob/master/docs/manual.md#group
+# https://github.com/aelsabbahy/goss/blob/main/docs/manual.md#group
 group:
   kah:
     exists: true
     gid: 568
 
-# https://github.com/aelsabbahy/goss/blob/master/docs/manual.md#user
+# https://github.com/aelsabbahy/goss/blob/main/docs/manual.md#user
 user:
   kah:
     exists: true
