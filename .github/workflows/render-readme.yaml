@@ -48,7 +48,7 @@ jobs:
       - name: Commit Changes
         shell: bash
         run: |
-          git config --global user.name "omux[bot]"
+          git config --global user.name "omux"
           git config --global user.email "dan@omux.dev"
           git add ./README.md
           git commit -m "chore: render README.md" || echo "No changes to commit"

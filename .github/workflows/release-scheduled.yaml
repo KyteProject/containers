@@ -44,5 +44,5 @@ jobs:
   render-readme:
     name: Render Readme
     needs: build-images
-    uses: ./.github/workflows/render-readme.yaml
+    uses: kyteproject/containers/.github/workflows/render-readme.yaml@main
     secrets: inherit
