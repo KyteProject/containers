@@ -110,9 +110,7 @@ Container | Channel | Image
 [actions-runner](https://github.com/KyteProject/containers/pkgs/container/actions-runner) | stable | ghcr.io/KyteProject/actions-runner
 [bazarr](https://github.com/KyteProject/containers/pkgs/container/bazarr) | stable | ghcr.io/KyteProject/bazarr
 [cni-plugins](https://github.com/KyteProject/containers/pkgs/container/cni-plugins) | stable | ghcr.io/KyteProject/cni-plugins
-[home-assistant](https://github.com/KyteProject/containers/pkgs/container/home-assistant) | stable | ghcr.io/KyteProject/home-assistant
 [irqbalance](https://github.com/KyteProject/containers/pkgs/container/irqbalance) | stable | ghcr.io/KyteProject/irqbalance
-[maddy](https://github.com/KyteProject/containers/pkgs/container/maddy) | main | ghcr.io/KyteProject/maddy
 [plex](https://github.com/KyteProject/containers/pkgs/container/plex) | stable | ghcr.io/KyteProject/plex
 [plex-beta](https://github.com/KyteProject/containers/pkgs/container/plex-beta) | beta | ghcr.io/KyteProject/plex-beta
 [postgres-init](https://github.com/KyteProject/containers/pkgs/container/postgres-init) | stable | ghcr.io/KyteProject/postgres-init
