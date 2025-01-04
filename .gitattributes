@@ -1,0 +1,16 @@
+* text=auto eol=lf
+*.sops.* diff=sopsdiffer
+
+# Vendored files
+.vscode/** linguist-vendored
+.github/renovate/** linguist-vendored
+
+# Documentation
+*.md linguist-documentation
+README.md linguist-documentation
+
+# Primary language
+*.yaml linguist-detectable
+*.yml linguist-detectable
+*.sh linguist-detectable
+Dockerfile linguist-detectable
