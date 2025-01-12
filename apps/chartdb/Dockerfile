@@ -29,6 +29,7 @@ WORKDIR /app
 RUN \
   apk add --no-cache \
   bash \
+  busybox \
   ca-certificates \
   catatonit \
   curl \
@@ -37,10 +38,13 @@ RUN \
   nano \
   tzdata \
   envsubst \
-  && mkdir -p /app/public
+  && mkdir -p /app/public \
+  && chown -R nobody:nogroup /app
 
 COPY --from=builder /app/dist /app/public
 COPY ./apps/chartdb/entrypoint.sh /entrypoint.sh
+
+RUN chmod +x /entrypoint.sh
 
 USER nobody:nogroup
 VOLUME ["/config"]

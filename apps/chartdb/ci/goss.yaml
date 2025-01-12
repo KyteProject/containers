@@ -12,3 +12,8 @@ http:
 file:
   /app/public/index.html:
     exists: true
+    owner: nobody
+    group: nogroup
+command:
+  busybox:
+    exit-status: 0
