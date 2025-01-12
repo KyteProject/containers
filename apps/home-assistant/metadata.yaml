@@ -1,5 +1,5 @@
 ---
-app: plex
+app: home-assistant
 semver: false
 channels:
   - name: stable

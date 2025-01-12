@@ -1,21 +1,21 @@
-FROM node:22-alpine AS builder
+FROM docker.io/library/node:20-alpine AS builder
 
 ARG VERSION
 ARG TARGETPLATFORM
 ARG CHANNEL
-ARG VITE_OPENAI_API_KEY
+ARG OPENAI_API_KEY
 
 WORKDIR /app
 
+#hadolint ignore=DL3018,DL3013,DL3059,DL4006
 RUN \
   apk add --no-cache \
   git \
   && git clone --depth 1 --branch ${VERSION} https://github.com/chartdb/chartdb.git . \
   && npm ci \
-  && VITE_OPENAI_API_KEY=${VITE_OPENAI_API_KEY} npm run build
+  && VITE_OPENAI_API_KEY=${OPENAI_API_KEY} npm run build
 
 FROM docker.io/library/alpine:3.21
-
 ENV UMASK="0002" \
   TZ="Etc/UTC"
 
@@ -24,6 +24,7 @@ ENV OPENAI_API_KEY=""
 USER root
 WORKDIR /app
 
+#hadolint ignore=DL3018,DL3013,DL3059,DL4006
 RUN \
   apk add --no-cache \
   bash \

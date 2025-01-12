@@ -1,14 +1,14 @@
 ---
 # yaml-language-server: $schema=https://raw.githubusercontent.com/goss-org/goss/master/docs/schema.yaml
 process:
-  httpd:
+  hass:
     running: true
+file:
+  /usr/local/bin/hass:
+    exists: true
 port:
-  tcp:8080:
+  tcp6:8123:
     listening: true
 http:
-  http://localhost:8080:
+  http://localhost:8123:
     status: 200
-file:
-  /app/public/index.html:
-    exists: true
