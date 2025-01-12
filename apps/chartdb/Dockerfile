@@ -29,7 +29,7 @@ WORKDIR /app
 RUN \
   apk add --no-cache \
   bash \
-  busybox \
+  busybox-extras \
   ca-certificates \
   catatonit \
   curl \
