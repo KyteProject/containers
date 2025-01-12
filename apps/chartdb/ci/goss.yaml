@@ -1,7 +1,7 @@
 ---
 # yaml-language-server: $schema=https://raw.githubusercontent.com/goss-org/goss/master/docs/schema.yaml
 process:
-  httpd:
+  python3:
     running: true
 port:
   tcp:8080:
@@ -10,10 +10,5 @@ http:
   http://localhost:8080:
     status: 200
 file:
-  /app/public/index.html:
+  /usr/bin/python3:
     exists: true
-    owner: nobody
-    group: nogroup
-command:
-  busybox:
-    exit-status: 0

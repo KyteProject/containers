@@ -29,15 +29,14 @@ WORKDIR /app
 RUN \
   apk add --no-cache \
   bash \
-  busybox-extras \
   ca-certificates \
   catatonit \
   curl \
   jo \
   jq \
   nano \
+  python3 \
   tzdata \
-  envsubst \
   && mkdir -p /app/public \
   && chown -R nobody:nogroup /app
 
