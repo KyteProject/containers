@@ -109,6 +109,7 @@ Container | Channel | Image
 --- | --- | ---
 [actions-runner](https://github.com/KyteProject/containers/pkgs/container/actions-runner) | stable | ghcr.io/KyteProject/actions-runner
 [bazarr](https://github.com/KyteProject/containers/pkgs/container/bazarr) | stable | ghcr.io/KyteProject/bazarr
+[chartdb](https://github.com/KyteProject/containers/pkgs/container/chartdb) | main | ghcr.io/KyteProject/chartdb
 [cni-plugins](https://github.com/KyteProject/containers/pkgs/container/cni-plugins) | stable | ghcr.io/KyteProject/cni-plugins
 [irqbalance](https://github.com/KyteProject/containers/pkgs/container/irqbalance) | stable | ghcr.io/KyteProject/irqbalance
 [maddy](https://github.com/KyteProject/containers/pkgs/container/maddy) | main | ghcr.io/KyteProject/maddy
