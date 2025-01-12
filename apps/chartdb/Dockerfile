@@ -11,11 +11,12 @@ WORKDIR /app
 RUN \
   apk add --no-cache \
   git \
-  && git clone --depth 1 --branch ${VERSION} https://github.com/chartdb/chartdb.git . \
+  && git clone --depth 1 --branch v${VERSION} https://github.com/chartdb/chartdb.git . \
   && npm ci \
   && VITE_OPENAI_API_KEY=${OPENAI_API_KEY} npm run build
 
 FROM docker.io/library/alpine:3.21
+
 ENV UMASK="0002" \
   TZ="Etc/UTC"
 
