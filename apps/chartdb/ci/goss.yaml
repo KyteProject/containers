@@ -1,0 +1,13 @@
+---
+process:
+  httpd:
+    running: true
+port:
+  tcp:8080:
+    listening: true
+http:
+  http://localhost:8080:
+    status: 200
+file:
+  /app/public/index.html:
+    exists: true
