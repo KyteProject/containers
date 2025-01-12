@@ -111,16 +111,15 @@ Container | Channel | Image
 [bazarr](https://github.com/KyteProject/containers/pkgs/container/bazarr) | stable | ghcr.io/KyteProject/bazarr
 [chartdb](https://github.com/KyteProject/containers/pkgs/container/chartdb) | main | ghcr.io/KyteProject/chartdb
 [cni-plugins](https://github.com/KyteProject/containers/pkgs/container/cni-plugins) | stable | ghcr.io/KyteProject/cni-plugins
+[home-assistant](https://github.com/KyteProject/containers/pkgs/container/home-assistant) | stable | ghcr.io/KyteProject/home-assistant
 [irqbalance](https://github.com/KyteProject/containers/pkgs/container/irqbalance) | stable | ghcr.io/KyteProject/irqbalance
 [maddy](https://github.com/KyteProject/containers/pkgs/container/maddy) | main | ghcr.io/KyteProject/maddy
 [plex](https://github.com/KyteProject/containers/pkgs/container/plex) | stable | ghcr.io/KyteProject/plex
-[plex-beta](https://github.com/KyteProject/containers/pkgs/container/plex-beta) | beta | ghcr.io/KyteProject/plex-beta
 [postgres-init](https://github.com/KyteProject/containers/pkgs/container/postgres-init) | stable | ghcr.io/KyteProject/postgres-init
 [prowlarr](https://github.com/KyteProject/containers/pkgs/container/prowlarr) | master | ghcr.io/KyteProject/prowlarr
 [prowlarr-develop](https://github.com/KyteProject/containers/pkgs/container/prowlarr-develop) | develop | ghcr.io/KyteProject/prowlarr-develop
 [prowlarr-nightly](https://github.com/KyteProject/containers/pkgs/container/prowlarr-nightly) | nightly | ghcr.io/KyteProject/prowlarr-nightly
 [qbittorrent](https://github.com/KyteProject/containers/pkgs/container/qbittorrent) | stable | ghcr.io/KyteProject/qbittorrent
-[qbittorrent-beta](https://github.com/KyteProject/containers/pkgs/container/qbittorrent-beta) | beta | ghcr.io/KyteProject/qbittorrent-beta
 [radarr](https://github.com/KyteProject/containers/pkgs/container/radarr) | master | ghcr.io/KyteProject/radarr
 [radarr-develop](https://github.com/KyteProject/containers/pkgs/container/radarr-develop) | develop | ghcr.io/KyteProject/radarr-develop
 [radarr-nightly](https://github.com/KyteProject/containers/pkgs/container/radarr-nightly) | nightly | ghcr.io/KyteProject/radarr-nightly
