@@ -1,4 +1,4 @@
-FROM docker.io/library/node:20-alpine AS builder
+FROM docker.io/library/node:22-alpine AS builder
 
 ARG VERSION
 ARG TARGETPLATFORM
