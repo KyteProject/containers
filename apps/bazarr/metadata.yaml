@@ -2,4 +2,4 @@
 # renovate: datasource=github-releases depName=morpheus65535/bazarr
 version: v1.5.1
 name: bazarr
-# test: true
+test: true
