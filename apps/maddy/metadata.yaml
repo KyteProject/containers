@@ -1,9 +1,5 @@
 ---
-app: maddy
-semver: true
-channels:
-  - name: main
-    platforms: ["linux/amd64", "linux/arm64"]
-    stable: true
-    tests:
-      enabled: false
+# renovate: datasource=github-releases depName=foxcpp/maddy
+version: 0.7.0
+name: maddy
+test: false

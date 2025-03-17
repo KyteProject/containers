@@ -7,7 +7,7 @@ ARG OPENAI_API_KEY
 
 WORKDIR /app
 
-#hadolint ignore=DL3018,DL3013,DL3059,DL4006
+#hadolint ignore=DL3018,DL3013
 RUN \
   apk add --no-cache \
   git \
@@ -17,6 +17,10 @@ RUN \
 
 FROM docker.io/library/alpine:3.21
 
+ARG TARGETPLATFORM
+ARG VERSION
+ARG CHANNEL
+
 ENV UMASK="0002" \
   TZ="Etc/UTC"
 
@@ -25,7 +29,7 @@ ENV OPENAI_API_KEY=""
 USER root
 WORKDIR /app
 
-#hadolint ignore=DL3018,DL3013,DL3059,DL4006
+#hadolint ignore=DL3018,DL3013
 RUN \
   apk add --no-cache \
   bash \
@@ -41,7 +45,7 @@ RUN \
   && chown -R nobody:nogroup /app
 
 COPY --from=builder /app/dist /app/public
-COPY ./apps/chartdb/entrypoint.sh /entrypoint.sh
+COPY ./entrypoint.sh /entrypoint.sh
 
 RUN chmod +x /entrypoint.sh
 
