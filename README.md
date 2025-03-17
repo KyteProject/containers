@@ -116,17 +116,17 @@ Container | Channel | Image
 [maddy](https://github.com/KyteProject/containers/pkgs/container/maddy) | main | ghcr.io/KyteProject/maddy
 [plex](https://github.com/KyteProject/containers/pkgs/container/plex) | stable | ghcr.io/KyteProject/plex
 [postgres-init](https://github.com/KyteProject/containers/pkgs/container/postgres-init) | stable | ghcr.io/KyteProject/postgres-init
-[prowlarr](https://github.com/KyteProject/containers/pkgs/container/prowlarr) | master | ghcr.io/KyteProject/prowlarr
+[prowlarr](https://github.com/KyteProject/containers/pkgs/container/prowlarr) | main | ghcr.io/KyteProject/prowlarr
 [prowlarr-develop](https://github.com/KyteProject/containers/pkgs/container/prowlarr-develop) | develop | ghcr.io/KyteProject/prowlarr-develop
 [prowlarr-nightly](https://github.com/KyteProject/containers/pkgs/container/prowlarr-nightly) | nightly | ghcr.io/KyteProject/prowlarr-nightly
 [qbittorrent](https://github.com/KyteProject/containers/pkgs/container/qbittorrent) | stable | ghcr.io/KyteProject/qbittorrent
-[radarr](https://github.com/KyteProject/containers/pkgs/container/radarr) | master | ghcr.io/KyteProject/radarr
+[radarr](https://github.com/KyteProject/containers/pkgs/container/radarr) | main | ghcr.io/KyteProject/radarr
 [radarr-develop](https://github.com/KyteProject/containers/pkgs/container/radarr-develop) | develop | ghcr.io/KyteProject/radarr-develop
 [radarr-nightly](https://github.com/KyteProject/containers/pkgs/container/radarr-nightly) | nightly | ghcr.io/KyteProject/radarr-nightly
 [sabnzbd](https://github.com/KyteProject/containers/pkgs/container/sabnzbd) | stable | ghcr.io/KyteProject/sabnzbd
 [sonarr](https://github.com/KyteProject/containers/pkgs/container/sonarr) | main | ghcr.io/KyteProject/sonarr
 [sonarr-develop](https://github.com/KyteProject/containers/pkgs/container/sonarr-develop) | develop | ghcr.io/KyteProject/sonarr-develop
-[tautulli](https://github.com/KyteProject/containers/pkgs/container/tautulli) | master | ghcr.io/KyteProject/tautulli
+[tautulli](https://github.com/KyteProject/containers/pkgs/container/tautulli) | main | ghcr.io/KyteProject/tautulli
 
 
 ## Deprecations

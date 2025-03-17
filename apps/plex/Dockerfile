@@ -1,8 +1,8 @@
 FROM docker.io/library/ubuntu:25.04
 
 ARG TARGETARCH
+ARG VENDOR
 ARG VERSION
-ARG CHANNEL
 
 ENV UMASK="0002" \
     TZ="Etc/UTC"
@@ -16,7 +16,7 @@ ENV NVIDIA_DRIVER_CAPABILITIES="compute,video,utility" \
     PLEX_MEDIA_SERVER_HOME="/usr/lib/plexmediaserver" \
     PLEX_MEDIA_SERVER_MAX_PLUGIN_PROCS="6" \
     PLEX_MEDIA_SERVER_INFO_VENDOR="Docker" \
-    PLEX_MEDIA_SERVER_INFO_DEVICE="Docker Container (kyteproject)"
+    PLEX_MEDIA_SERVER_INFO_DEVICE="Docker Container (${VENDOR})"
 
 USER root
 WORKDIR /app
@@ -26,20 +26,20 @@ RUN \
     apt-get update \
     && \
     apt-get install -y --no-install-recommends --no-install-suggests \
-    bash \
-    ca-certificates \
-    catatonit \
-    coreutils \
-    curl \
-    jo \
-    jq \
-    nano \
-    tzdata \
-    uuid-runtime \
-    xmlstarlet \
+        bash \
+        ca-certificates \
+        catatonit \
+        coreutils \
+        curl \
+        jo \
+        jq \
+        nano \
+        tzdata \
+        uuid-runtime \
+        xmlstarlet \
     && \
     curl -fsSL -o /tmp/plex.deb \
-    "https://downloads.plex.tv/plex-media-server-new/${VERSION}/debian/plexmediaserver_${VERSION}_${TARGETARCH}.deb" \
+        "https://downloads.plex.tv/plex-media-server-new/${VERSION}/debian/plexmediaserver_${VERSION}_${TARGETARCH}.deb" \
     && \
     dpkg -i --force-confold /tmp/plex.deb \
     && chmod -R 755 "${PLEX_MEDIA_SERVER_HOME}" \
@@ -48,7 +48,7 @@ RUN \
     && apt-get clean \
     && rm -rf /etc/default/plexmediaserver /tmp/* /var/lib/apt/lists/* /var/tmp/
 
-COPY ./apps/plex/entrypoint.sh /entrypoint.sh
+COPY ./entrypoint.sh /entrypoint.sh
 
 USER nobody:nogroup
 WORKDIR /config

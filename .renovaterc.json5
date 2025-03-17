@@ -1,0 +1,20 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: [
+    "config:recommended",
+    "docker:enableMajor",
+    "helpers:pinGitHubActionDigests",
+    "github>kyteproject/containers//.renovate/autoMerge.json5",
+    "github>kyteproject/containers//.renovate/customDatasources.json5",
+    "github>kyteproject/containers//.renovate/customManagers.json5",
+    "github>kyteproject/containers//.renovate/labels.json5",
+    "github>kyteproject/containers//.renovate/semanticCommits.json5",
+    ":automergeBranch",
+    ":dependencyDashboard",
+    ":disableRateLimiting",
+    ":semanticCommits",
+    ":timezone(America/Chicago)",
+  ],
+  dependencyDashboardTitle: "Renovate Dashboard 🤖",
+  suppressNotifications: ["prEditedNotification", "prIgnoreNotification"],
+}
