@@ -1,5 +1,0 @@
----
-# yaml-language-server: $schema=https://raw.githubusercontent.com/goss-org/goss/main/docs/schema.yaml
-file:
-  /usr/local/bin/maddy:
-    exists: true
