@@ -2,4 +2,4 @@
 # renovate: datasource=github-releases depName=foxcpp/maddy
 version: 0.7.0
 name: maddy
-test: false
+# test: false
