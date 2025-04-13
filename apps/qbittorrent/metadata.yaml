@@ -1,5 +1,5 @@
 ---
 # renovate: datasource=custom.qbittorrent depName=qbittorrent
-version: 5.0.4
+version: 5.0.5
 name: qbittorrent
 test: true
