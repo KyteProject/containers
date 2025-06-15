@@ -1,5 +1,5 @@
 ---
 # renovate: datasource=custom.servarr depName=radarr versioning=loose
-version: 5.26.1.10080
+version: 5.26.2.10099
 name: radarr
 test: true
