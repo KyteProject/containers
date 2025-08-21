@@ -1,5 +1,5 @@
 ---
 # renovate: datasource=github-releases depName=home-assistant/core
-version: 2025.8.2
+version: 2025.8.3
 name: home-assistant
 test: true
