@@ -1,5 +1,5 @@
 ---
 # renovate: datasource=github-releases depName=chartdb/chartdb
-version: 1.14.0
+version: 1.15.1
 name: chartdb
 test: true
