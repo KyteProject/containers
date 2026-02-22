@@ -15,7 +15,7 @@ RUN \
   && npm ci \
   && VITE_OPENAI_API_KEY=${OPENAI_API_KEY} npm run build
 
-FROM docker.io/library/alpine:3.21
+FROM docker.io/library/alpine:3.23
 
 ARG TARGETPLATFORM
 ARG VERSION
