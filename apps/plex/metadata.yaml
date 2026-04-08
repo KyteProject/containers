@@ -1,5 +1,5 @@
 ---
 # renovate: datasource=custom.plex depName=plex versioning=loose
-version: 1.43.0.10492-121068a07
+version: 1.43.1.10576-06378bdcd
 name: plex
 test: true
