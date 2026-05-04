@@ -1,5 +1,5 @@
 ---
 # renovate: datasource=custom.sonarr depName=sonarr versioning=loose
-version: 4.0.17.2953
+version: 4.0.17.2967
 name: sonarr
 test: true
