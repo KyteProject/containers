@@ -1,5 +1,5 @@
 ---
 # renovate: datasource=custom.servarr depName=prowlarr versioning=loose
-version: 2.4.0.5397
+version: 2.5.0.5422
 name: prowlarr
 test: true
